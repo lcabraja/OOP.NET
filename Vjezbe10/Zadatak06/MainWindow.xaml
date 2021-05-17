@@ -1,0 +1,36 @@
+﻿<Window x:Class="Zadatak06.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Zadatak06"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <StackPanel>
+        <StackPanel 
+            Orientation="Horizontal"
+            >
+            <Button
+                Content="Add Panel"
+                Padding="10px"
+                Margin="10px"
+                IsDefault="True"
+                Click="addPanel_Click"
+                />
+            <Button
+                Content="Remove All Panels"
+                Padding="10px"
+                Margin="10px"
+                IsDefault="True"
+                Click="removePanel_Click"
+                />
+        </StackPanel>
+        <WrapPanel
+            x:Name="daddy"
+            VerticalAlignment="Top"
+            HorizontalAlignment="Left"
+            >
+            
+        </WrapPanel>
+    </StackPanel>
+</Window>

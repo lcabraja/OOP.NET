@@ -1,0 +1,39 @@
+﻿<Window x:Class="Zadatak03.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Zadatak03"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800"
+        FontFamily="Segoe UI"
+        FontSize="20pt"
+        >
+    <Grid>
+        <Button>
+            <TextBlock TextWrapping="Wrap">
+                <Run Foreground="Blue">
+                    1st line of text
+                </Run>
+                <LineBreak />
+                <Span Foreground="DarkRed">
+                    2nd <Underline><Italic><Bold>line</Bold></Italic></Underline> of text
+                </Span>
+                <LineBreak />
+                <Run Foreground="Green">
+                    3rd line of text
+                </Run>
+                <LineBreak />
+                <TextBlock 
+                    TextWrapping="Wrap"
+                    Background="#333"
+                    Foreground="Yellow"
+                    Padding="10px">
+                        New Textblock
+                        <LineBreak />
+                        2nd line of new text block
+                </TextBlock>
+            </TextBlock>
+        </Button>
+    </Grid>
+</Window>

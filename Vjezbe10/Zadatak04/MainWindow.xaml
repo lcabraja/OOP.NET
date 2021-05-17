@@ -6,7 +6,33 @@
         xmlns:local="clr-namespace:Zadatak04"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
+    <Window.Background>
+        <LinearGradientBrush 
+            StartPoint="0,0.5"
+            EndPoint="1,0.5"
+            >
+            <GradientStop Color="Yellow" Offset="0"/>
+            <GradientStop Color="DarkBlue" Offset="1"/>
+        </LinearGradientBrush>
+    </Window.Background>
     <Grid>
-        
+        <Button
+            VerticalAlignment="Center"
+            HorizontalAlignment="Center"
+            Padding="40px" 
+            Click="Button_Click"
+            >
+
+            <Button.Background>
+                <LinearGradientBrush 
+                    StartPoint="0.5,0"
+                    EndPoint="0.5,1"
+                >
+                    <GradientStop Color="#333" Offset="0"/>
+                    <GradientStop Color="#666" Offset="1"/>
+                </LinearGradientBrush>
+            </Button.Background>
+            Press me
+        </Button>
     </Grid>
 </Window>

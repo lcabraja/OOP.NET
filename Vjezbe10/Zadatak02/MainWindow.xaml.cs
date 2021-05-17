@@ -24,5 +24,10 @@ namespace Zadatak02
         {
             InitializeComponent();
         }
+
+        private void btn1st_Click(object sender, RoutedEventArgs e)
+        {
+            MessageBox.Show("Hello, there!");
+        }
     }
 }

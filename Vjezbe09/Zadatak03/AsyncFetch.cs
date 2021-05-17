@@ -24,9 +24,16 @@ namespace Zadatak03
         private async void AsyncFetch_OnLoad(object sender, EventArgs e)
         {
             lbInfo.Text = "Fetching...";
-            Data data = await GetDataAsync();
-            lbInfo.Text = "Done.";
-            cbSelect.DataSource = data.Users;
+            try {
+                Data data = await GetDataAsync();
+                lbInfo.Text = "Done.";
+                cbSelect.DataSource = data.Users;
+            }
+            catch (Exception ex) 
+            {
+                MessageBox.Show(ex.Message);
+                lbInfo.Text = ex.Message;
+            }
         }
 
         private Task<Data> GetDataAsync()

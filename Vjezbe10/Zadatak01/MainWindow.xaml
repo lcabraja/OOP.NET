@@ -5,12 +5,33 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Zadatak01"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="MainWindow" Height="450" Width="800"
+        FontFamily="Arial"
+        FontSize="18pt"
+        FontWeight="Bold">
     <Grid>
-        <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="223*"/>
-            <ColumnDefinition Width="41*"/>
-        </Grid.ColumnDefinitions>
+        <Label
+            Content="Hello World"
+            HorizontalAlignment="Center"
+            VerticalAlignment="Top"
+            Foreground="Blue"
+            />
+        <Label
+            HorizontalAlignment="Center"
+            VerticalAlignment="Center"
+            Foreground="Blue"
 
+            >
+            Hello World
+        </Label>
+        <Label
+            HorizontalAlignment="Center"
+            VerticalAlignment="Bottom"
+            Foreground="Blue"
+            >
+            <Label.Content>
+                Hello World
+            </Label.Content>
+        </Label>
     </Grid>
 </Window>
